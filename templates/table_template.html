@@ -1,0 +1,176 @@
+<style>
+    .custom-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: 'Segoe UI', Arial, sans-serif;
+        margin: 20px 0;
+    }
+    .custom-table thead {
+        background-color: #2c3e50;
+        color: white;
+    }
+    .custom-table th {
+        padding: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid #34495e;
+    }
+    .custom-table td {
+        padding: 12px 15px;
+        font-size: 15px;
+        border-bottom: 1px solid #eee;
+        text-align: center;
+    }
+    .custom-table tr:hover {
+        background-color: rgba(44, 62, 80, 0.05);
+        transition: background-color 0.3s ease;
+    }
+    .custom-table td:first-child {
+        font-weight: 500;
+        text-align: left;
+        padding-left: 20px;
+        color: #2c3e50;
+    }
+    .custom-table .number-cell {
+        font-weight: 500;
+        color: #050a07;
+    }
+    .custom-table .acwi-row {
+        font-weight: 600;
+        background-color: rgba(44, 62, 80, 0.05);
+    }
+     /* Index of the world */
+    .custom-table .equity,
+    .custom-table .fixed-income,
+    .custom-table .commodity {
+        background-color: none;
+    }
+    .custom-table tr.equity td:first-child {
+        border-left: 4px solid #002a66;
+        color: black;
+        text-align: center;
+    }
+    .custom-table tr.fixed-income td:first-child {
+        border-left: 4px solid #3f7e44;
+        color: black;
+        text-align: center;
+    }
+    .custom-table tr.commodity td:first-child {
+        border-left: 4px solid #fd9d24;
+        color: black;
+        text-align: center;
+    }
+    .custom-table tr.other td:first-child {
+        border-left: 4px solid #070707;
+        color: black;
+        text-align: center;
+    }
+    /* Equities */
+    /* Region */
+    .custom-table .americas td:first-child {
+        border-left: 4px solid #002a66;  /* Dark blue color */
+    }
+    
+    .custom-table .europe td:first-child {
+        border-left: 4px solid #3f7e44;  /* Dark green color */
+    }
+    
+    .custom-table .asia td:first-child {
+        border-left: 4px solid #fd9d24;  /* Dark orange color */
+    }
+    /* Sector */
+    .custom-table .cyclical td:first-child {
+        border-left: 4px solid #c45300;
+    }
+    
+    .custom-table .defensive td:first-child {
+        border-left: 4px solid #4f8325; 
+    }
+    
+    .custom-table .sensitive td:first-child {
+        border-left: 4px solid #1f55a5; 
+    }
+    /* Fixed Income styles */
+        .custom-table .government-bonds td:first-child {
+        border-left: 4px solid #4a90e2;  
+    }
+    
+    .custom-table .corporate-bonds td:first-child {
+        border-left: 4px solid #27ae60; 
+    }
+    
+    /* Commodity styles */
+    .custom-table .precious-metals td:first-child {
+        border-left: 4px solid #f2994a; 
+    }
+    
+    .custom-table .energy td:first-child {
+        border-left: 4px solid #eb5757; 
+    }
+    
+    .custom-table .agriculture td:first-child {
+        border-left: 4px solid #6fcf97;  
+    }
+    /* Cryptocurrency*/
+    .custom-table .bitcoin td:first-child {
+        border-left: 4px solid #f1d311; 
+    }
+    
+    .custom-table .layer-1 td:first-child {
+        border-left: 4px solid #131212; 
+    }
+    
+
+    /* CSS heatmap */
+    .custom-table .heat-0 {
+        background-color: rgba(235, 87, 87, 0.1);  /* Very light red */
+    }
+    .custom-table .heat-1 {
+        background-color: rgba(235, 87, 87, 0.3);  /* Light red */
+    }
+    .custom-table .heat-2 {
+        background-color: rgba(255, 0, 0, 0.5);
+    }
+    .custom-table .heat-3 {
+        background-color: rgba(235, 87, 87, 0.7);  /* Dark red */
+    }
+    .custom-table .heat-4 {
+        background-color: rgba(235, 87, 87, 0.9);  /* Very dark red */
+    }
+    .custom-table .heat-p0 {
+        background-color: rgba(39, 174, 96, 0.1);  /* Very light green */
+    }
+    .custom-table .heat-p1 {
+        background-color: rgba(39, 174, 96, 0.3);  /* Light green */
+    }
+    .custom-table .heat-p2 {
+        background-color: rgba(39, 174, 96, 0.5);  /* Medium green */
+    }
+    .custom-table .heat-p3 {
+        background-color: rgba(39, 174, 96, 0.7);  /* Dark green */
+    }
+    .custom-table .heat-p4 {
+        background-color: rgba(39, 174, 96, 0.9);  /* Very dark green */
+    }
+</style>
+<table class="custom-table">
+    <thead>
+        <tr>
+            <th>World Index</th>
+            <th>1 Week Change</th>
+            <th>1 Month Change</th>
+            <th>3 Month Change</th>
+            <th>6 Month Change</th>
+            <th>YTD Change (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {table_body}
+    </tbody>
+</table>

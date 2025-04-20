@@ -1,0 +1,72 @@
+{ 
+  "indices": {
+      "ACWI": {
+        "ticker": "ACWI",
+        "type": "Equity",
+        "order": 1
+      },
+      "Developed Markets": {
+        "ticker": "URTH",
+        "type": "Equity",
+        "order": 2
+      },
+      "Emerging Markets": {
+        "ticker": "EEM",
+        "type": "Equity",
+        "order": 3
+      },
+      "Short-Term Treasury": {
+        "ticker": "SHY",
+        "type": "Fixed Income",
+        "order": 4
+      },
+      "Intermediate Treasury": {
+        "ticker": "IEI",
+        "type": "Fixed Income",
+        "order": 5
+      },
+      "Long-Term Treasury": {
+        "ticker": "TLT",
+        "type": "Fixed Income",
+        "order": 6
+      },
+      "Gold": {
+        "ticker": "GLDM",
+        "type": "Commodity",
+        "order": 7
+      }
+  },
+  "Equity": {
+    "Region": {
+      "Americas": ["SPY"],
+      "Europe": ["VGK", "EWU"],
+      "Asia": ["AIA", "EWJ", "INDA", "MCHI"]
+    },
+    "Sector": {
+      "Technology": ["IXN"],
+      "Healthcare": ["IXJ"],
+      "Financial Services": ["IXG"],
+      "Energy": ["IXC"],
+      "Industrials": ["EXI"],
+      "Consumer Cyclical": ["RXI"],
+      "Consumer Defensive": ["KXI"],
+      "Utilities": ["JXI"],
+      "Real Estate": ["REET"],
+      "Basic Materials": ["MXI"],
+      "Communication Services": ["IXP"]
+    }
+  },
+  "Fixed Income": {
+    "Government Bonds": ["SHY","IEI","TLT" ],
+    "Corporate Bonds": ["LQD", "HYG"]
+  },
+  "Commodity": {
+    "Precious Metals": ["GLDM", "SLV"],
+    "Energy": ["USO", "UNG"],
+    "Agriculture": ["DBA"]
+  },
+  "Cryptocurrency":{
+    "Bitcoin": ["BTC-USD"],
+    "Layer-1": ["ETH-USD", "SOL-USD", "BNB-USD", "ADA-USD", "DOT-USD","SUI20947-USD"]
+  }
+}
