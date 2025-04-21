@@ -95,10 +95,3 @@ The application uses the yfinance library to fetch financial data from Yahoo Fin
 
 You can customize the tracked assets by modifying the `data/Ticker.json` file. The file organizes assets by categories and subcategories, making it easy to add or remove assets as needed.
 
-## License
-
-[Add your license information here]
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
