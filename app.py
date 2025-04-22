@@ -236,7 +236,6 @@ elif option == 'Equities':
         html = html_template.replace('{table_body}', table_body)
         # HTML table
         st.write(html, unsafe_allow_html=True)
-
         # Heatmap Explanation
         st.write("### Heatmap Explanation")
         st.write("The heatmap values represent changes compared to the average changes of ACWI (MSCI All Country World Index).")
@@ -313,12 +312,13 @@ elif option == 'Equities':
 
             html = html_template.replace('{table_body}', table_body)
             st.write(html, unsafe_allow_html=True)
-    # Heatmap Explanation
-    st.write("### Heatmap Explanation")
-    st.write("The heatmap values represent changes compared to the average changes of ACWI (MSCI All Country World Index).")
-    st.write("The average changes of ACWI used as the baseline for comparison are:")
-    for col in numeric_cols:
-        st.write(f"**{col}:**Average %Chg = {acwi_rolling_changes[col]:+.2f}%")
+        # Heatmap Explanation
+        st.write("### Heatmap Explanation")
+        st.write("The heatmap values represent changes compared to the average changes of ACWI (MSCI All Country World Index).")
+        st.write("The average changes of ACWI used as the baseline for comparison are:")
+        for col in numeric_cols:
+            st.write(f"**{col}:**Average %Chg = {acwi_rolling_changes[col]:+.2f}%")
+
 
 elif option == 'Fixed Income':
     st.header("Fixed Income")
