@@ -85,7 +85,7 @@ MarketTrackingWeb/
 1. Launch the application using the command mentioned in the "Running the Application" section
 2. Use the sidebar to select the asset class you want to track (World Index, Equities, Fixed Income, etc.)
 3. For Equities, you can further select between Region and Sector views
-4. In the "My Tracking" section, you can add your own ticker symbols to track specific assets
+4. In the "My Tracking" section, you can add your own ticker symbols from Yahoo Finance to track specific assets
 
 ## Data Sources
 
